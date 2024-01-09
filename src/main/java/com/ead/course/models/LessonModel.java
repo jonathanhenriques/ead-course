@@ -30,7 +30,7 @@ public class LessonModel implements Serializable {
     @Column(nullable = false)
     private String videoUrl;
     @Column(nullable = false)
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime creationDate;
 
     //Nao mostra o campo no GET, apenas em escrita como POST, PUT...
